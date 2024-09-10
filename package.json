@@ -1,0 +1,62 @@
+{
+  "name": "babylon-edu-api",
+  "version": "1.0.0",
+  "description": "The backend api for our library management system",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "start:prod": "node src/main.js",
+    "start:dev": "nodemon src/main.js",
+    "db:seed": "node src/commands/seed.command.js",
+    "db:drop": "node src/commands/drop.command.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ACA-Backend/babylon-edu-api.git"
+  },
+  "keywords": [
+    "Libary",
+    "books",
+    "education",
+    "history",
+    "documents"
+  ],
+  "authors": [
+    {
+      "name": "Favour Max-Oti",
+      "email": "maxotif@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ACA-Backend/babylon-edu-api/issues"
+  },
+  "homepage": "https://github.com/ACA-Backend/babylon-edu-api#readme",
+  "dependencies": {
+    "argon2": "^0.40.3",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "pg": "^8.12.0",
+    "pg-hstore": "^2.3.4",
+    "redis": "^4.7.0",
+    "sequelize": "^6.37.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/node": "^7.25.0",
+    "@babel/preset-env": "^7.25.3",
+    "@faker-js/faker": "^8.4.1",
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.4",
+    "supertest": "^7.0.0"
+  }
+}
